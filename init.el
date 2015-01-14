@@ -1,13 +1,16 @@
-;; Mac OS X Keyboard Settings
+;; emacs env settings
+(menu-bar-mode -1)
 (setq mac-control-modifier 'control)
 (setq mac-option-modifier 'meta)
 (set-keyboard-coding-system nil)
 
-;; Cask and Pallet init
-;; homebrew cask
-;; pallet from http://goo.gl/MXCyf4
+;; 1. install cask via homebrew
+;; 2. link ~/.cask to /usr/local/opt/cask
+;; 3. M-x package-install RET pallet RET
+;; 4. M-X pallet-install
+;; (from http://goo.gl/MXCyf4)
 
-(require 'cask "/usr/local/Cellar/cask/0.7.2/cask.el")
+(require 'cask "~/.cask/cask.el")
 (cask-initialize)
 (require 'pallet)
 (pallet-mode t)
@@ -22,4 +25,3 @@
 
 (cd "~/")
 
-(require 'rcodetools)
