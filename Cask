@@ -4,6 +4,7 @@
 (depends-on "aggressive-indent")
 (depends-on "auto-complete")
 (depends-on "autopair")
+(depends-on "color-theme-sanityinc-solarized")
 (depends-on "color-theme-solarized")
 (depends-on "enh-ruby-mode")
 (depends-on "pallet")
