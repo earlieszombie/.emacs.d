@@ -44,3 +44,4 @@
  '(default ((t (:height 160 :family "Ubuntu Mono derivative Powerline")))))
 
 (setq smartparens-mode t)
+(drag-stuff-mode t)

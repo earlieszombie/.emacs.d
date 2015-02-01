@@ -50,3 +50,5 @@ of FILE in the current directory, suitable for creation"
             (local-set-key (kbd "C-c k") 'rspec-compile-file)
 	    (local-set-key (kbd "C-c C-c") 'xmp)
             ))
+
+(add-hook 'ruby-mode-hook 'drag-stuff-mode)

@@ -6,6 +6,7 @@
 (depends-on "autopair")
 (depends-on "color-theme-sanityinc-solarized")
 (depends-on "color-theme-solarized")
+(depends-on "drag-stuff")
 (depends-on "enh-ruby-mode")
 (depends-on "pallet")
 (depends-on "powerline")
