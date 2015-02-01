@@ -11,4 +11,8 @@
 (setq column-number-mode t)
 
 ;; Make sure all backup files only live in one place
-(setq backup-directory-alist '(("." . "~/.emacs/backups")))
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+
+;; drag-stuff
+(require 'drag-stuff)
+(drag-stuff-mode t)
