@@ -1,8 +1,11 @@
 ;; emacs env settings
 (menu-bar-mode -1)
-(setq mac-control-modifier 'control)
-(setq mac-option-modifier 'meta)
-(set-keyboard-coding-system nil)
+
+;; key bindings
+(when (eq system-type 'darwin) ;; mac specific settings
+  (setq mac-option-modifier 'alt)
+  (setq mac-command-modifier 'meta)
+  (global-set-key [kp-delete] 'delete-char)) ;; sets fn-delete to be right-delete
 
 ;; 1. install cask via homebrew
 ;; 2. link ~/.cask to /usr/local/opt/cask
@@ -14,6 +17,10 @@
 (cask-initialize)
 (require 'pallet)
 (pallet-mode t)
+
+;; Enabling vim-like powerline
+(require 'powerline)
+(powerline-default-theme)
 
 (add-to-list 'load-path "~/.emacs.d/custom")
 
@@ -32,15 +39,16 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
  '(custom-safe-themes
    (quote
-    ("1297a022df4228b81bc0436230f211bad168a117282c20ddcba2db8c6a200743" default)))
+    ("e87a2bd5abc8448f8676365692e908b709b93f2d3869c42a4371223aab7d9cf8" "1297a022df4228b81bc0436230f211bad168a117282c20ddcba2db8c6a200743" default)))
  '(display-battery-mode t)
  '(tool-bar-mode nil))
 
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:height 160 :family "Ubuntu Mono derivative Powerline")))))
+(set-default-font "Roboto Mono Light for Powerline")
+(set-face-attribute 'default (selected-frame) :height 140)
+(setq initial-frame-alist
+      '(
+	(width . 177)
+	(height . 54) ))

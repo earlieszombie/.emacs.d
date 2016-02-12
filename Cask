@@ -2,6 +2,7 @@
 
 (depends-on "ag")
 (depends-on "aggressive-indent")
+(depends-on "airline-themes")
 (depends-on "auto-complete")
 (depends-on "autopair")
 (depends-on "cask")
