@@ -31,6 +31,7 @@
 (load "04_ruby.el")
 (load "05_smartparens.el")
 (load "06_drag-stuff.el")
+(load "07_compile.el")
 
 (cd "~/")
 
