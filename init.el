@@ -5,7 +5,14 @@
 (when (eq system-type 'darwin) ;; mac specific settings
   (setq mac-option-modifier 'alt)
   (setq mac-command-modifier 'meta)
-  (global-set-key [kp-delete] 'delete-char)) ;; sets fn-delete to be right-delete
+  ;; French mac keyboard annoyances
+  (global-set-key (kbd "A-/") "\\")
+  (global-set-key (kbd "A-5") "\[")
+  (global-set-key (kbd "A-°") "\]")
+  (global-set-key (kbd "A-(") "\{")
+  (global-set-key (kbd "A-)") "\}")
+  ;; sets fn-delete to be right-delete
+  (global-set-key [kp-delete] 'delete-char)) 
 
 ;; 1. install cask via homebrew
 ;; 2. link ~/.cask to /usr/local/opt/cask
