@@ -11,6 +11,8 @@
   (global-set-key (kbd "A-°") "\]")
   (global-set-key (kbd "A-(") "\{")
   (global-set-key (kbd "A-)") "\}")
+  ;; regexp search
+  (global-set-key (kbd "M-?") 'query-replace-regexp)
   ;; sets fn-delete to be right-delete
   (global-set-key [kp-delete] 'delete-char)) 
 
