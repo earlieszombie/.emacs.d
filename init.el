@@ -11,6 +11,7 @@
   (global-set-key (kbd "A-°") "\]")
   (global-set-key (kbd "A-(") "\{")
   (global-set-key (kbd "A-)") "\}")
+  (global-set-key (kbd "A-n") "\~")
   ;; regexp search
   (global-set-key (kbd "M-?") 'query-replace-regexp)
   ;; sets fn-delete to be right-delete
@@ -41,6 +42,7 @@
 (load "05_smartparens.el")
 (load "06_drag-stuff.el")
 (load "07_compile.el")
+(load "08_ledger.el")
 
 (cd "~/")
 
