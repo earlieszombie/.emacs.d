@@ -1,6 +1,6 @@
 ;; emacs env settings
 (menu-bar-mode -1)
-
+(desktop-save-mode 1)
 ;; key bindings
 (when (eq system-type 'darwin) ;; mac specific settings
   (setq mac-option-modifier 'alt)
