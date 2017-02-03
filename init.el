@@ -77,6 +77,3 @@
 	(width . 177)
 	(height . 54) ))
 (setq battery-mode-line-format "[%b%p]")
-(setq linum-format "%4d \u2502 ")
-;; (set-face-attribute 'linum nil :background "#CCC")
-(setq linum-format 'linum-highlight-current-line)
