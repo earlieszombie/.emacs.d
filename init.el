@@ -1,4 +1,11 @@
 ;; emacs env settings
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (menu-bar-mode -1)
 (desktop-save-mode 1)
 ;; key bindings
@@ -38,13 +45,15 @@
 
 (load "00_common.el")
 (load "01_autocomplete.el")
-(load "02_rcodetools.el")
+;;(load "02_rcodetools.el")
 (load "03_theme.el")
-(load "04_ruby.el")
+;;(load "04_ruby.el")
 (load "05_smartparens.el")
 (load "06_drag-stuff.el")
 (load "07_compile.el")
-(load "08_ledger.el")
+;;(load "08_ledger.el")
+(load "09_haskell.el")
+(load "10_linum-highlight.el")
 
 (cd "~/")
 
@@ -60,9 +69,14 @@
  '(display-battery-mode t)
  '(tool-bar-mode nil))
 
-(set-default-font "Roboto Mono Light for Powerline")
+;; (set-default-font "Roboto Mono Light for Powerline")
+(set-default-font "Fira Code")
 (set-face-attribute 'default (selected-frame) :height 140)
 (setq initial-frame-alist
       '(
 	(width . 177)
 	(height . 54) ))
+(setq battery-mode-line-format "[%b%p]")
+(setq linum-format "%4d \u2502 ")
+;; (set-face-attribute 'linum nil :background "#CCC")
+(setq linum-format 'linum-highlight-current-line)
