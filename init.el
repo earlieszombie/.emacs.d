@@ -40,6 +40,7 @@
 ;; Enabling vim-like powerline
 (require 'powerline)
 (powerline-default-theme)
+(require 'all-the-icons)
 
 (add-to-list 'load-path "~/.emacs.d/custom")
 
@@ -66,7 +67,7 @@
  '(column-number-mode t)
  '(custom-safe-themes
    (quote
-    ("e87a2bd5abc8448f8676365692e908b709b93f2d3869c42a4371223aab7d9cf8"\
+    ("e87a2bd5abc8448f8676365692e908b709b93f2d3869c42a4371223aab7d9cf8" \
      "1297a022df4228b81bc0436230f211bad168a117282c20ddcba2db8c6a200743" default)))
  '(display-battery-mode t)
  '(haskell-process-auto-import-loaded-modules t)
@@ -75,14 +76,13 @@
  '(haskell-process-type (quote cabal-repl))
  '(package-selected-packages
    (quote
-    (neotree solarized-theme soft-morning-theme smartparens ruby-end\
-	     pallet names haskell-mode enh-ruby-mode drag-stuff\
-	     color-theme-solarized color-theme-sanityinc-solarized\
-	     autopair auto-complete\
-	     airline-themes aggressive-indent ag)))
+    (all-the-icons neotree solarized-theme soft-morning-theme smartparens ruby-end\
+		   pallet names haskell-mode enh-ruby-mode drag-stuff\
+		   color-theme-solarized color-theme-sanityinc-solarized\
+		   autopair auto-complete\
+		   airline-themes aggressive-indent ag)))
  '(tool-bar-mode nil))
 
-;; (set-default-font "Roboto Mono Light for Powerline")
 (set-default-font "Fira Code")
 (set-face-attribute 'default (selected-frame) :height 140)
 (setq initial-frame-alist
@@ -91,7 +91,6 @@
 	(height . 54) ))
 (setq battery-mode-line-format "[%b%p]")
 (setq linum-format "%4d \u2502 ")
-;; (set-face-attribute 'linum nil :background "#CCC")
 (setq linum-format 'linum-highlight-current-line)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
