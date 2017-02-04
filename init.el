@@ -23,13 +23,15 @@
   (global-set-key (kbd "A-ç") "\Ç")
   ;; regexp search
   (global-set-key (kbd "M-?") 'query-replace-regexp)
+  (global-set-key (kbd "M-o") 'overwrite-mode)
+  
   ;; sets fn-delete to be right-delete
   (global-set-key [kp-delete] 'delete-char)) 
 
 ;; 1. install cask via homebrew
 ;; 2. link ~/.cask to /usr/local/opt/cask
 ;; 3. M-x package-install RET pallet RET
-;; 4. M-X pallet-install
+;; 4. M-x pallet-install
 ;; (from http://goo.gl/MXCyf4)
 
 (require 'cask "~/.cask/cask.el")
