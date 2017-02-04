@@ -1,4 +1,8 @@
 ;; from https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md
+;; % cabal update
+;; % cabal install hasktags
+;; % cabal install stylish-haskell
+;; % cabal install present
 
 (add-hook 'haskell-mode-hook #'hindent-mode)
 (eval-after-load 'haskell-mode
