@@ -65,8 +65,20 @@
  '(column-number-mode t)
  '(custom-safe-themes
    (quote
-    ("e87a2bd5abc8448f8676365692e908b709b93f2d3869c42a4371223aab7d9cf8" "1297a022df4228b81bc0436230f211bad168a117282c20ddcba2db8c6a200743" default)))
+    ("e87a2bd5abc8448f8676365692e908b709b93f2d3869c42a4371223aab7d9cf8"\
+     "1297a022df4228b81bc0436230f211bad168a117282c20ddcba2db8c6a200743" default)))
  '(display-battery-mode t)
+ '(haskell-process-auto-import-loaded-modules t)
+ '(haskell-process-log t)
+ '(haskell-process-suggest-remove-import-lines t)
+ '(haskell-process-type (quote cabal-repl))
+ '(package-selected-packages
+   (quote
+    (neotree solarized-theme soft-morning-theme smartparens ruby-end\
+	     pallet names haskell-mode enh-ruby-mode drag-stuff\
+	     color-theme-solarized color-theme-sanityinc-solarized\
+	     autopair auto-complete\
+	     airline-themes aggressive-indent ag)))
  '(tool-bar-mode nil))
 
 ;; (set-default-font "Roboto Mono Light for Powerline")
@@ -80,3 +92,9 @@
 (setq linum-format "%4d \u2502 ")
 ;; (set-face-attribute 'linum nil :background "#CCC")
 (setq linum-format 'linum-highlight-current-line)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

@@ -16,6 +16,7 @@
 (depends-on "f")
 (depends-on "haskell-mode")
 (depends-on "names")
+(depends-on "neotree")
 (depends-on "package-build")
 (depends-on "pallet")
 (depends-on "popup")
