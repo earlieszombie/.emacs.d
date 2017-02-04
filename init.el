@@ -54,6 +54,7 @@
 ;;(load "08_ledger.el")
 (load "09_haskell.el")
 (load "10_linum-highlight.el")
+(load "11_js2mode.el")
 
 (cd "~/")
 
