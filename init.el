@@ -77,9 +77,11 @@
  '(haskell-process-log t)
  '(haskell-process-suggest-remove-import-lines t)
  '(haskell-process-type (quote cabal-repl))
+ '(neo-theme (quote icons))
  '(package-selected-packages
    (quote
-    (all-the-icons-dired all-the-icons neotree solarized-theme soft-morning-theme smartparens ruby-end\
+    (all-the-icons-dired all-the-icons neotree solarized-theme\
+			 soft-morning-theme smartparens ruby-end\
 			 pallet names haskell-mode enh-ruby-mode drag-stuff\
 			 color-theme-solarized color-theme-sanityinc-solarized\
 			 autopair auto-complete\
