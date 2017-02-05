@@ -58,6 +58,7 @@
 (load "09_haskell.el")
 (load "10_linum-highlight.el")
 (load "11_js2mode.el")
+(load "12_all-the-icons.el")
 
 (cd "~/")
 
