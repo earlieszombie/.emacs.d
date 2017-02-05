@@ -4,6 +4,7 @@
 (depends-on "aggressive-indent")
 (depends-on "airline-themes")
 (depends-on "all-the-icons")
+(depends-on "all-the-icons-dired")
 (depends-on "auto-complete")
 (depends-on "autopair")
 (depends-on "cask")

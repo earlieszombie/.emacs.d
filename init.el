@@ -78,11 +78,11 @@
  '(haskell-process-type (quote cabal-repl))
  '(package-selected-packages
    (quote
-    (all-the-icons neotree solarized-theme soft-morning-theme smartparens ruby-end\
-		   pallet names haskell-mode enh-ruby-mode drag-stuff\
-		   color-theme-solarized color-theme-sanityinc-solarized\
-		   autopair auto-complete\
-		   airline-themes aggressive-indent ag)))
+    (all-the-icons-dired all-the-icons neotree solarized-theme soft-morning-theme smartparens ruby-end\
+			 pallet names haskell-mode enh-ruby-mode drag-stuff\
+			 color-theme-solarized color-theme-sanityinc-solarized\
+			 autopair auto-complete\
+			 airline-themes aggressive-indent ag)))
  '(tool-bar-mode nil))
 
 (set-default-font "Fira Code")
